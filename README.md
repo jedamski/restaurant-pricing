@@ -9,6 +9,11 @@ This script is a Monte-Carlo simulation to determine the probability distributio
 
 The script pulls in menu pricing information and will stochastically and iteratively formulate a meal. For example, one meal may have two appetizers and the most expensive dessert whereas the next may only have one appetizer and no dessert. All of these decisions are dictated by independent event probability distribution functions. These are all then aggregated into an overall meal price probability distribution function, from which the final gift price is set.
 
+## Inputs
+I took a stab at predicting your inputs and the final gift values is based on these values. The values in the image below are reflected in edibles.py as inputs. Remember, this is the general spectrum of expected probabilities but in now way should affect what you actually decide to order. The fractional values represent the probability that you will order 0, 1, or, 2 items in a course. From these inputs the script will identify how many items you ordered and will randomly select a menu item from the list of available plates.
+
+![alt text](./img/inputs.png)
+
 ## Results
 I know, this is terrible practice. But for the purposes of this gift, I'm going to assume the results are static and summarize in the markdown file. Let's get started.
 
