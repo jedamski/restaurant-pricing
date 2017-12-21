@@ -151,7 +151,8 @@ plt.ylabel('Cumulative Probability')
 plt.show()
 
 # Going to plot the probability distribution function as well for funsies
-bins = np.arange(0, 1000, 5)
+bins = np.arange(0, 1000, 2)
+plt.plot([gift_card_value, gift_card_value], [0, 0.2], 'k--')
 plt.plot([gift_card_value + cash_value, gift_card_value + cash_value], [0, 0.2], 'k')
 plt.hist(total, bins, normed=1, facecolor='blue', alpha=0.5)
 plt.xlim((60, 160))
