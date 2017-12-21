@@ -1,4 +1,4 @@
-#DEREK. If you're reading this, close the tab.
+# DEREK. If you're reading this, close the tab.
 For serious.
 
 # Restaurant Pricing
