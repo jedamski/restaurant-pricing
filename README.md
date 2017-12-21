@@ -1,5 +1,6 @@
-# Restaurant Pricing
+#DEREK. If you're reading this, close the tab.
 
+# Restaurant Pricing
 So you're going to [Edibles](http://ediblesrochester.com) on University Avenue in the Neighborhood of the Arts. It's a casual dining spot with eclectic eats and a location with a history. The restaurant features tall tin ceilings, original hardwoods, and a unique location in the Flatiron building, built in 1850. The food pulls influences from Eastern Europe but blends it with typical New American fare. Complemented by delicious cocktails and a spread of appetizers, you're sure to have a great time!
 
 ![alt text](https://s3-media1.fl.yelpcdn.com/bphoto/6bk_Qe5vbkCl5VVjqcxHFA/o.jpg)
