@@ -5,18 +5,29 @@ import matplotlib.pyplot as plt
 # Summary
 #   So you're going to Edibles on University Avenue in the Neighborhood of the
 #   Arts. It's a casual dining spot with eclectic eats and a location with a
-#   history. The restaurant features tall tin-roof ceilings, original hardwoods,
-#   and a unique location in the flat-iron building.
+#   history. The restaurant features tall tin ceilings, original hardwoods, and
+#   a unique location in the Flatiron building, built in 1850. The food pulls
+#   influences from Eastern Europe but blends it with typical New American fare.
+#   Complemented by delicious cocktails and a spread of appetizers, you're sure
+#   to have a great time!
 #
-#   The following code is a Monte-Carlo simulation to determine the probability
+#   This script is a Monte-Carlo simulation to determine the probability
 #   distribution function for the price of a meal at Edibles, but tailored to
 #   your specific preferences and to Edibles selection of menu items. I've used
 #   this code to set the gift amount. The gift card amount is set based on the
 #   50% confidence interval and the additional cash is set based on the 90%
-#   confidence interval. Meaning, if you go out to eat at Edibles every day of
-#   the year for the next 273 years (100,000 times), this gift card and cash
-#   would cover the whole meal, tip, and tax 90% of the time.
+#   one-sided confidence interval. Meaning, if you go out to eat at Edibles
+#   every day of the year for the next 273 years (100,000 times), this gift card
+#   and cash would cover the meal, tip, and tax 90% of the time.
 #
+#   The script pulls in menu pricing information and will stochastically and
+#   iteratively formulate a meal. For example, one meal may have two appetizers
+#   and the most expensive dessert whereas the next may only have one appetizer
+#   and no dessert. All of these decisions are dictated by independent event
+#   probability distribution functions. These are all then aggregated into an
+#   overall meal price probability distribution function, from which the final
+#   gift price is set.
+
 # Input Description
 #   For a given course, you have the option of getting 0, 1, or 2 items. The
 #   probability of each event is specified in a numpy array. For example, if
@@ -137,7 +148,7 @@ for ind in  range(0, n_runs):
 gift_card_value = np.percentile(total, 50)
 cash_value = np.percentile(total, 90) - gift_card_value
 
-# Print out the results to the terminal
+# Print out the results to the command line
 print 'Total Value: ${:3.2f}'.format(gift_card_value+cash_value)
 print '  Gift Card: ${:3.2f}'.format(gift_card_value)
 print '  Cash Value: ${:3.2f}'.format(cash_value)
