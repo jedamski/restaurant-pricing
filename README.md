@@ -1,6 +1,3 @@
-# DEREK. If you're reading this, close the tab.
-For serious.
-
 # Restaurant Pricing
 So you're going to [Edibles](http://ediblesrochester.com) on University Avenue in the Neighborhood of the Arts. It's a casual dining spot with eclectic eats and a location with a history. The restaurant features tall tin ceilings, original hardwoods, and a unique location in the Flatiron building, built in 1850. The food pulls influences from Eastern Europe but blends it with typical New American fare. Complemented by delicious cocktails and a spread of appetizers, you're sure to have a great time!
 
@@ -12,7 +9,7 @@ This script is a Monte-Carlo simulation to determine the probability distributio
 The script pulls in menu pricing information and will stochastically and iteratively formulate a meal. For example, one meal may have two appetizers and the most expensive dessert whereas the next may only have one appetizer and no dessert. All of these decisions are dictated by independent event probability distribution functions. These are all then aggregated into an overall meal price probability distribution function, from which the final gift price is set.
 
 ## Inputs
-I took a stab at predicting your inputs and the final gift values is based on these values. The values in the image below are reflected in edibles.py as inputs. Remember, this is the general spectrum of expected probabilities but in no way should affect what you actually decide to order. The fractional values represent the probability that you will order 0, 1, or, 2 items in a course respectively. From these inputs, the script will identify how many items you ordered and at each iteration will randomly select a menu item from the list of available plates.
+I took a stab at predicting your inputs and the final gift values are based on these values. The values in the image below are reflected in edibles.py as inputs. Remember, this is the general spectrum of expected probabilities but in no way should affect what you actually decide to order. The fractional values represent the probability that you will order 0, 1, or, 2 items in a course respectively. From these inputs, the script will identify how many items you ordered and at each iteration will randomly select a menu item from the list of available plates.
 
 ![alt text](./img/inputs.png)
 
